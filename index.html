@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .num {
+            overflow-x: scroll;
+            padding-top: 20px;
+            justify-content: center;
+            align-items: baseline;
+            border-radius: 20px;
+            flex-direction: column;
+            box-shadow: 2px 2px 20px orange;
+            /* width: 70%; */
+            height: 700px;
+        }
+
+        .added {
+            /* width: 500px; */
+            /* height: 60px; */
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            margin-top: 25px;
+            box-shadow: 2px 2px 20px orange;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            column-gap: 0px;
+            row-gap: 00px;
+            border: 3 px solid orange;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .num {
+            /* position: fixed; */
+            margin-top: 30px;
+        }
+
+        @media screen and (min-width:699px) {
+            .num {
+                width: 500px;
+            }
+        }
+
+        @media screen and (min-width:566px) {
+            .added {
+                /* width: 500px; */
+                height: 60px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                margin-top: 25px;
+                box-shadow: 2px 2px 20px orange;
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+                column-gap: 0px;
+                row-gap: 00px;
+                border: 3 px solid orange;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <div class="num" id="output">
+            <h1
+                style="font-size: 60px;font-family: cursive; color: rgb(255, 0, 0); display: flex;justify-content: center; align-items: center;">
+                <b style="color: orange;">T</b>odo <b style="color: orange;">A</b>pp
+            </h1>
+            <br><br>
+            <br><br>
+            <div class="cont"
+                style=" margin-top: -60px; display: flex;justify-content: center; align-items: center; width:100%; height: 120px;">
+                <input class="inp1"
+                    style="box-shadow: 2px 2px 20px orange; border: none; width: 400px; height: 60px; border-top-left-radius:50px ;border-bottom-left-radius:50px ;"
+                    type="text" id="input1">
+                <button class="inpbtn1"
+                    style="box-shadow: 2px 2px 20px orange; background:linear-gradient(to bottom left, orange , red); font-size: 20px;font-family: cursive; color: white; border: none; width: 150px; height: 60px; border-top-right-radius:50px ;border-bottom-right-radius:50px ;"
+                    id="add">Enter</button>
+
+            </div>
+        </div>
+    </center>
+    <script type="module" src='todo.js'></script>
+</body>
+
+</html>
